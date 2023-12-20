@@ -55,7 +55,14 @@ namespace t13_2
         }
         public int Compare()
         {
-
+            if(denomination*quantity == price)
+            {
+                Write("The amount is not enough to buy");
+            }
+            else
+            {
+                Write("The amount is enough to buy");
+            }
         }
     }
 }
