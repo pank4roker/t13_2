@@ -74,6 +74,9 @@ namespace t13_2
                 Write("To what number do you want to change the number of bills??\nNumber: ");
                 int n = Convert.ToInt32(ReadLine());
                 WriteLine($"\nChange: {banknote3.Change(n)}");
+                Write("Enter the price of the product: \n");
+                double price = Convert.ToDouble(ReadLine());
+                banknote3.Compare(price);
 
 
 
